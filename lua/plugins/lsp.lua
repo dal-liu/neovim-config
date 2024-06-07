@@ -48,7 +48,6 @@ return {
 				pyright = {},
 				tsserver = {},
 				lua_ls = {},
-				solargraph = {},
 				texlab = {},
 			}
 
