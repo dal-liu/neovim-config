@@ -59,7 +59,15 @@ return {
 				gopls = {},
 				pyright = {},
 				tsserver = {},
-				lua_ls = {},
+				lua_ls = {
+					settings = {
+						Lua = {
+							completion = {
+								callSnippet = "Replace",
+							},
+						},
+					},
+				},
 				texlab = {},
 			}
 
