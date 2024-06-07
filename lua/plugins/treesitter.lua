@@ -14,7 +14,6 @@ return {
 			ignore_install = { "latex" }, -- Use vimtex instead
 		},
 		config = function(_, opts)
-			---@diagnostic disable-next-line: missing-fields
 			require("nvim-treesitter.configs").setup(opts)
 		end,
 	},
