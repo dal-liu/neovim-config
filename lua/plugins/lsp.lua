@@ -32,6 +32,12 @@ return {
 						vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
 					end
 
+					-- Go to definition of a variable
+					map("gd", vim.lsp.buf.definition, "[G]o to [D]efinition")
+
+					-- Go to references of a variable
+					map("gr", vim.lsp.buf.references, "[G]o to [R]eferences")
+
 					-- Rename the variable under your cursor.
 					map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
 
