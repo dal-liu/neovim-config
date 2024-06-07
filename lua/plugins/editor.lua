@@ -10,18 +10,23 @@ return {
 		opts = { signs = false },
 	},
 
-	-- Add indentation guides even on blank lines
+	-- File explorer
 	{
-		"lukas-reineke/indent-blankline.nvim",
-		main = "ibl",
-		opts = {
-			indent = {
-				char = "▏",
-			},
-			scope = {
-				show_start = false,
-				show_end = false,
-			},
+		"nvim-tree/nvim-tree.lua",
+		version = "*",
+		lazy = false,
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
 		},
+		config = function()
+			require("nvim-tree").setup({
+				renderer = {
+					indent_markers = {
+						enable = false,
+					},
+				},
+			})
+			vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", { desc = "[T]oggle Nvim Tree" })
+		end,
 	},
 }

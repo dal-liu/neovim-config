@@ -11,6 +11,11 @@ return {
 		event = "VimEnter",
 		config = function()
 			require("which-key").setup()
+
+			-- Document existing key chains
+			require("which-key").register({
+				["<leader>r"] = { name = "[R]ename", _ = "which_key_ignore" },
+			})
 		end,
 	},
 
@@ -114,37 +119,6 @@ return {
 				expr = true,
 				replace_keycodes = false,
 			})
-		end,
-	},
-
-	-- Statusline
-	{
-		"nvim-lualine/lualine.nvim",
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
-		config = function()
-			require("lualine").setup({})
-		end,
-	},
-
-	-- File explorer
-	{
-		"nvim-tree/nvim-tree.lua",
-		version = "*",
-		lazy = false,
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
-		config = function()
-			require("nvim-tree").setup({
-				renderer = {
-					indent_markers = {
-						enable = false,
-					},
-				},
-			})
-			vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", { desc = "[T]oggle Nvim Tree" })
 		end,
 	},
 
