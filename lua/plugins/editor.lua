@@ -26,7 +26,7 @@ return {
 					},
 				},
 			})
-			vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", { desc = "[T]oggle Nvim Tree" })
+			vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", { desc = "Toggle [N]vim Tree" })
 		end,
 	},
 }
