@@ -8,9 +8,6 @@ return {
 			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 
-			-- Useful status updates for LSP.
-			{ "j-hui/fidget.nvim", opts = {} },
-
 			-- Configures LuaLS for editing Neovim config files
 			{
 				"folke/lazydev.nvim",
@@ -40,9 +37,6 @@ return {
 
 					-- Rename the variable under your cursor.
 					map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
-
-					-- Opens a popup that displays documentation about the word under your cursor
-					map("K", vim.lsp.buf.hover, "Hover Documentation")
 				end,
 			})
 
