@@ -63,6 +63,8 @@ return {
 					},
 				},
 				texlab = {},
+				html = {},
+				cssls = {},
 			}
 
 			-- Ensure the servers and tools above are installed
@@ -71,6 +73,7 @@ return {
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
 				"stylua",
+				"eslint",
 				"prettier",
 				"isort",
 				"black",
