@@ -8,7 +8,7 @@ return {
 			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 
-			-- Configures LuaLS for editing Neovim config files
+			-- Configures LuaLS for jditing Neovim config files
 			{
 				"folke/lazydev.nvim",
 				ft = "lua", -- only load on lua files
@@ -45,26 +45,13 @@ return {
 
 			-- Enable the following language servers
 			local servers = {
-				clangd = {
-					capabilities = {
-						offsetEncoding = { "utf-16" },
-					},
-				},
-				gopls = {},
-				pyright = {},
-				tsserver = {},
-				lua_ls = {
-					settings = {
-						Lua = {
-							completion = {
-								callSnippet = "Replace",
-							},
-						},
-					},
-				},
-				texlab = {},
-				html = {},
 				cssls = {},
+				gopls = {},
+				html = {},
+				lua_ls = {},
+				pyright = {},
+				texlab = {},
+				tsserver = {},
 			}
 
 			-- Ensure the servers and tools above are installed
