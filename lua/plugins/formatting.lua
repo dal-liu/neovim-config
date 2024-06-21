@@ -29,7 +29,6 @@ return {
 				python = { "isort", "black" },
 				javascript = { "prettier" },
 				javascriptreact = { "prettier" },
-				cpp = { "clang-format" },
 				html = { "prettier" },
 				css = { "prettier" },
 			},
