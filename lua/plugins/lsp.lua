@@ -64,6 +64,8 @@ return {
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
+			require("mason").setup()
+
 			-- Enable the following language servers
 			local servers = {
 				cssls = {},
@@ -76,8 +78,6 @@ return {
 			}
 
 			-- Ensure the servers and tools above are installed
-			require("mason").setup()
-
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
 				"stylua",
