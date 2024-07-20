@@ -31,6 +31,7 @@ return {
 				javascriptreact = { "prettier" },
 				html = { "prettier" },
 				css = { "prettier" },
+				json = { "prettier" },
 			},
 		},
 	},
