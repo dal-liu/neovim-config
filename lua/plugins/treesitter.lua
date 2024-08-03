@@ -1,6 +1,10 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+		dependencies = {
+			-- Automatically add closing characters for certain languages
+			"RRethy/nvim-treesitter-endwise",
+		},
 		build = ":TSUpdate",
 		opts = {
 			ensure_installed = { "bash", "c", "html", "lua", "luadoc", "markdown", "vim", "vimdoc" },
@@ -12,6 +16,9 @@ return {
 				enable = true,
 			},
 			ignore_install = { "latex" }, -- Use vimtex instead
+			endwise = {
+				enable = true,
+			},
 		},
 		config = function(_, opts)
 			require("nvim-treesitter.configs").setup(opts)
