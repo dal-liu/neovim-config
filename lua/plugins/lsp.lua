@@ -8,7 +8,7 @@ return {
 			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 
-			-- Configures LuaLS for jditing Neovim config files
+			-- Configures LuaLS for editing Neovim config files
 			{
 				"folke/lazydev.nvim",
 				ft = "lua", -- only load on lua files
