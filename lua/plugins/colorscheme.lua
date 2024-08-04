@@ -5,7 +5,7 @@ return {
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		init = function()
 			-- Load the colorscheme here.
-			-- vim.cmd.colorscheme("onedark")
+			vim.cmd.colorscheme("onedark")
 		end,
 		config = function()
 			local colors = require("onedarkpro.helpers").get_colors()
@@ -31,7 +31,7 @@ return {
 		priority = 1000,
 		init = function()
 			-- Load the colorscheme here.
-			vim.cmd.colorscheme("ayu")
+			-- vim.cmd.colorscheme("ayu")
 		end,
 		config = function()
 			require("ayu").setup({
