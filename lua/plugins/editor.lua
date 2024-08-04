@@ -74,7 +74,7 @@ return {
 	-- File explorer
 	{
 		"nvim-tree/nvim-tree.lua",
-		version = "*",
+		tag = "nvim-tree-v1.3.3",
 		lazy = false,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",

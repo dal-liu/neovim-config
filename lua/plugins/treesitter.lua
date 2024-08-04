@@ -1,6 +1,7 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+		tag = "v0.8.0",
 		dependencies = {
 			-- Automatically add closing characters for certain languages
 			"RRethy/nvim-treesitter-endwise",
