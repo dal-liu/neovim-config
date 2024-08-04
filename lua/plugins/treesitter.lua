@@ -29,6 +29,7 @@ return {
 	-- Automatically add closing tags for HTML and JSX
 	{
 		"windwp/nvim-ts-autotag",
+		branch = "nvim_0.9",
 		config = function()
 			require("nvim-ts-autotag").setup()
 		end,
