@@ -26,12 +26,6 @@ return {
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black" },
-				javascript = { "prettier" },
-				javascriptreact = { "prettier" },
-				html = { "prettier" },
-				css = { "prettier" },
-				json = { "prettier" },
 			},
 		},
 	},
