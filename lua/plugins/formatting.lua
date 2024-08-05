@@ -1,6 +1,7 @@
 return {
 	{
 		"stevearc/conform.nvim",
+		branch = "nvim-0.8",
 		lazy = false,
 		keys = {
 			{
